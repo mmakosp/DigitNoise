@@ -9,13 +9,34 @@
 /* Begin PBXBuildFile section */
 		E05ABB1B29D8B7F700135664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABB1A29D8B7F700135664 /* AppDelegate.swift */; };
 		E05ABB1D29D8B7F700135664 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABB1C29D8B7F700135664 /* SceneDelegate.swift */; };
-		E05ABB1F29D8B7F700135664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABB1E29D8B7F700135664 /* ViewController.swift */; };
 		E05ABB2229D8B7F700135664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05ABB2029D8B7F700135664 /* Main.storyboard */; };
 		E05ABB2429D8B7F900135664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05ABB2329D8B7F900135664 /* Assets.xcassets */; };
 		E05ABB2729D8B7F900135664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05ABB2529D8B7F900135664 /* LaunchScreen.storyboard */; };
 		E05ABB3229D8B7F900135664 /* DigitNoiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABB3129D8B7F900135664 /* DigitNoiseTests.swift */; };
 		E05ABB3C29D8B7F900135664 /* DigitNoiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABB3B29D8B7F900135664 /* DigitNoiseUITests.swift */; };
 		E05ABB3E29D8B7F900135664 /* DigitNoiseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABB3D29D8B7F900135664 /* DigitNoiseUITestsLaunchTests.swift */; };
+		E05ABB4B29D8B89200135664 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABB4A29D8B89200135664 /* StartViewController.swift */; };
+		E05ABC6529D8C69200135664 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ABC6429D8C69200135664 /* TestViewController.swift */; };
+		E08A5B7129DA0F450012EA76 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08A5B7029DA0F450012EA76 /* TestViewModel.swift */; };
+		E0B9A73229DB4DAA00475D46 /* 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A71F29DB4DA900475D46 /* 5.m4a */; };
+		E0B9A73329DB4DAA00475D46 /* 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72029DB4DA900475D46 /* 7.m4a */; };
+		E0B9A73429DB4DAA00475D46 /* noise_6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72129DB4DA900475D46 /* noise_6.m4a */; };
+		E0B9A73529DB4DAA00475D46 /* noise_9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72229DB4DA900475D46 /* noise_9.m4a */; };
+		E0B9A73629DB4DAA00475D46 /* 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72329DB4DA900475D46 /* 3.m4a */; };
+		E0B9A73729DB4DAA00475D46 /* noise_8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72429DB4DA900475D46 /* noise_8.m4a */; };
+		E0B9A73829DB4DAA00475D46 /* 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72529DB4DA900475D46 /* 4.m4a */; };
+		E0B9A73929DB4DAA00475D46 /* noise_1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72629DB4DA900475D46 /* noise_1.m4a */; };
+		E0B9A73A29DB4DAA00475D46 /* noise_10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72729DB4DA900475D46 /* noise_10.m4a */; };
+		E0B9A73B29DB4DAA00475D46 /* 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72829DB4DA900475D46 /* 6.m4a */; };
+		E0B9A73C29DB4DAA00475D46 /* noise_3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72929DB4DA900475D46 /* noise_3.m4a */; };
+		E0B9A73D29DB4DAA00475D46 /* 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72A29DB4DA900475D46 /* 8.m4a */; };
+		E0B9A73E29DB4DAA00475D46 /* noise_2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72B29DB4DA900475D46 /* noise_2.m4a */; };
+		E0B9A73F29DB4DAA00475D46 /* noise_4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72C29DB4DA900475D46 /* noise_4.m4a */; };
+		E0B9A74029DB4DAA00475D46 /* noise_5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72D29DB4DA900475D46 /* noise_5.m4a */; };
+		E0B9A74129DB4DAA00475D46 /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72E29DB4DA900475D46 /* 1.m4a */; };
+		E0B9A74229DB4DAA00475D46 /* 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A72F29DB4DA900475D46 /* 9.m4a */; };
+		E0B9A74329DB4DAA00475D46 /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A73029DB4DA900475D46 /* 2.m4a */; };
+		E0B9A74429DB4DAA00475D46 /* noise_7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E0B9A73129DB4DA900475D46 /* noise_7.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +60,6 @@
 		E05ABB1729D8B7F700135664 /* DigitNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05ABB1A29D8B7F700135664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E05ABB1C29D8B7F700135664 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E05ABB1E29D8B7F700135664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E05ABB2129D8B7F700135664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E05ABB2329D8B7F900135664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E05ABB2629D8B7F900135664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +69,28 @@
 		E05ABB3729D8B7F900135664 /* DigitNoiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitNoiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05ABB3B29D8B7F900135664 /* DigitNoiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitNoiseUITests.swift; sourceTree = "<group>"; };
 		E05ABB3D29D8B7F900135664 /* DigitNoiseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitNoiseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E05ABB4A29D8B89200135664 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		E05ABC6429D8C69200135664 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		E08A5B7029DA0F450012EA76 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		E0B9A71F29DB4DA900475D46 /* 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5.m4a; path = "../../../../Downloads/audio_files 2/5.m4a"; sourceTree = "<group>"; };
+		E0B9A72029DB4DA900475D46 /* 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 7.m4a; path = "../../../../Downloads/audio_files 2/7.m4a"; sourceTree = "<group>"; };
+		E0B9A72129DB4DA900475D46 /* noise_6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_6.m4a; path = "../../../../Downloads/audio_files 2/noise_6.m4a"; sourceTree = "<group>"; };
+		E0B9A72229DB4DA900475D46 /* noise_9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_9.m4a; path = "../../../../Downloads/audio_files 2/noise_9.m4a"; sourceTree = "<group>"; };
+		E0B9A72329DB4DA900475D46 /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3.m4a; path = "../../../../Downloads/audio_files 2/3.m4a"; sourceTree = "<group>"; };
+		E0B9A72429DB4DA900475D46 /* noise_8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_8.m4a; path = "../../../../Downloads/audio_files 2/noise_8.m4a"; sourceTree = "<group>"; };
+		E0B9A72529DB4DA900475D46 /* 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4.m4a; path = "../../../../Downloads/audio_files 2/4.m4a"; sourceTree = "<group>"; };
+		E0B9A72629DB4DA900475D46 /* noise_1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_1.m4a; path = "../../../../Downloads/audio_files 2/noise_1.m4a"; sourceTree = "<group>"; };
+		E0B9A72729DB4DA900475D46 /* noise_10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_10.m4a; path = "../../../../Downloads/audio_files 2/noise_10.m4a"; sourceTree = "<group>"; };
+		E0B9A72829DB4DA900475D46 /* 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6.m4a; path = "../../../../Downloads/audio_files 2/6.m4a"; sourceTree = "<group>"; };
+		E0B9A72929DB4DA900475D46 /* noise_3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_3.m4a; path = "../../../../Downloads/audio_files 2/noise_3.m4a"; sourceTree = "<group>"; };
+		E0B9A72A29DB4DA900475D46 /* 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8.m4a; path = "../../../../Downloads/audio_files 2/8.m4a"; sourceTree = "<group>"; };
+		E0B9A72B29DB4DA900475D46 /* noise_2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_2.m4a; path = "../../../../Downloads/audio_files 2/noise_2.m4a"; sourceTree = "<group>"; };
+		E0B9A72C29DB4DA900475D46 /* noise_4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_4.m4a; path = "../../../../Downloads/audio_files 2/noise_4.m4a"; sourceTree = "<group>"; };
+		E0B9A72D29DB4DA900475D46 /* noise_5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_5.m4a; path = "../../../../Downloads/audio_files 2/noise_5.m4a"; sourceTree = "<group>"; };
+		E0B9A72E29DB4DA900475D46 /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.m4a; path = "../../../../Downloads/audio_files 2/1.m4a"; sourceTree = "<group>"; };
+		E0B9A72F29DB4DA900475D46 /* 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 9.m4a; path = "../../../../Downloads/audio_files 2/9.m4a"; sourceTree = "<group>"; };
+		E0B9A73029DB4DA900475D46 /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2.m4a; path = "../../../../Downloads/audio_files 2/2.m4a"; sourceTree = "<group>"; };
+		E0B9A73129DB4DA900475D46 /* noise_7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = noise_7.m4a; path = "../../../../Downloads/audio_files 2/noise_7.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +141,14 @@
 		E05ABB1929D8B7F700135664 /* DigitNoise */ = {
 			isa = PBXGroup;
 			children = (
+				E08A5B7229DA32330012EA76 /* resources */,
+				E05ABC6329D8C4ED00135664 /* ViewController */,
+				E05ABC6229D8C4C100135664 /* Networking */,
+				E05ABC6129D8C4A500135664 /* ViewModel */,
+				E05ABC6029D8C49E00135664 /* UI */,
 				E05ABB1A29D8B7F700135664 /* AppDelegate.swift */,
 				E05ABB1C29D8B7F700135664 /* SceneDelegate.swift */,
-				E05ABB1E29D8B7F700135664 /* ViewController.swift */,
-				E05ABB2029D8B7F700135664 /* Main.storyboard */,
 				E05ABB2329D8B7F900135664 /* Assets.xcassets */,
-				E05ABB2529D8B7F900135664 /* LaunchScreen.storyboard */,
 				E05ABB2829D8B7F900135664 /* Info.plist */,
 			);
 			path = DigitNoise;
@@ -125,6 +169,65 @@
 				E05ABB3D29D8B7F900135664 /* DigitNoiseUITestsLaunchTests.swift */,
 			);
 			path = DigitNoiseUITests;
+			sourceTree = "<group>";
+		};
+		E05ABC6029D8C49E00135664 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E05ABB2029D8B7F700135664 /* Main.storyboard */,
+				E05ABB2529D8B7F900135664 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E05ABC6129D8C4A500135664 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E08A5B7029DA0F450012EA76 /* TestViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E05ABC6229D8C4C100135664 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E05ABC6329D8C4ED00135664 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E05ABB4A29D8B89200135664 /* StartViewController.swift */,
+				E05ABC6429D8C69200135664 /* TestViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E08A5B7229DA32330012EA76 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0B9A72E29DB4DA900475D46 /* 1.m4a */,
+				E0B9A73029DB4DA900475D46 /* 2.m4a */,
+				E0B9A72329DB4DA900475D46 /* 3.m4a */,
+				E0B9A72529DB4DA900475D46 /* 4.m4a */,
+				E0B9A71F29DB4DA900475D46 /* 5.m4a */,
+				E0B9A72829DB4DA900475D46 /* 6.m4a */,
+				E0B9A72029DB4DA900475D46 /* 7.m4a */,
+				E0B9A72A29DB4DA900475D46 /* 8.m4a */,
+				E0B9A72F29DB4DA900475D46 /* 9.m4a */,
+				E0B9A72629DB4DA900475D46 /* noise_1.m4a */,
+				E0B9A72B29DB4DA900475D46 /* noise_2.m4a */,
+				E0B9A72929DB4DA900475D46 /* noise_3.m4a */,
+				E0B9A72C29DB4DA900475D46 /* noise_4.m4a */,
+				E0B9A72D29DB4DA900475D46 /* noise_5.m4a */,
+				E0B9A72129DB4DA900475D46 /* noise_6.m4a */,
+				E0B9A73129DB4DA900475D46 /* noise_7.m4a */,
+				E0B9A72429DB4DA900475D46 /* noise_8.m4a */,
+				E0B9A72229DB4DA900475D46 /* noise_9.m4a */,
+				E0B9A72729DB4DA900475D46 /* noise_10.m4a */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +334,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B9A73629DB4DAA00475D46 /* 3.m4a in Resources */,
+				E0B9A74229DB4DAA00475D46 /* 9.m4a in Resources */,
+				E0B9A73829DB4DAA00475D46 /* 4.m4a in Resources */,
 				E05ABB2729D8B7F900135664 /* LaunchScreen.storyboard in Resources */,
+				E0B9A73B29DB4DAA00475D46 /* 6.m4a in Resources */,
+				E0B9A74329DB4DAA00475D46 /* 2.m4a in Resources */,
+				E0B9A73729DB4DAA00475D46 /* noise_8.m4a in Resources */,
+				E0B9A73A29DB4DAA00475D46 /* noise_10.m4a in Resources */,
+				E0B9A73F29DB4DAA00475D46 /* noise_4.m4a in Resources */,
+				E0B9A73C29DB4DAA00475D46 /* noise_3.m4a in Resources */,
+				E0B9A73329DB4DAA00475D46 /* 7.m4a in Resources */,
+				E0B9A74029DB4DAA00475D46 /* noise_5.m4a in Resources */,
+				E0B9A73D29DB4DAA00475D46 /* 8.m4a in Resources */,
+				E0B9A73229DB4DAA00475D46 /* 5.m4a in Resources */,
+				E0B9A73429DB4DAA00475D46 /* noise_6.m4a in Resources */,
+				E0B9A74129DB4DAA00475D46 /* 1.m4a in Resources */,
 				E05ABB2429D8B7F900135664 /* Assets.xcassets in Resources */,
+				E0B9A73E29DB4DAA00475D46 /* noise_2.m4a in Resources */,
+				E0B9A73929DB4DAA00475D46 /* noise_1.m4a in Resources */,
 				E05ABB2229D8B7F700135664 /* Main.storyboard in Resources */,
+				E0B9A73529DB4DAA00475D46 /* noise_9.m4a in Resources */,
+				E0B9A74429DB4DAA00475D46 /* noise_7.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +380,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E05ABB1F29D8B7F700135664 /* ViewController.swift in Sources */,
 				E05ABB1B29D8B7F700135664 /* AppDelegate.swift in Sources */,
 				E05ABB1D29D8B7F700135664 /* SceneDelegate.swift in Sources */,
+				E08A5B7129DA0F450012EA76 /* TestViewModel.swift in Sources */,
+				E05ABC6529D8C69200135664 /* TestViewController.swift in Sources */,
+				E05ABB4B29D8B89200135664 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

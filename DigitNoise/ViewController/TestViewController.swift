@@ -72,23 +72,14 @@ class TestViewController: UIViewController {
     
     
     
-    // Process the user's response for the current trial
     func processResponse(digitCount: String?, noiseCount: String?) {
-        // Check if the user's response matches the current digit
-        if numberInputTextField.text == digitCount {
-            print("Correct!")
-        } else {
-            print("Incorrect!")
-        }
-        
-        // Advance to the next trial
+
         currentTrial += 1
         
         if currentTrial < numTrials {
             loadTestElements()
         } else {
-            // Test is complete
-            print("Test complete!")
+            print("Complete!")
         }
     }
     
@@ -101,25 +92,18 @@ class TestViewController: UIViewController {
         return digits
     }
     
-    // Handle the next button press
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         
-        // check if digit is correct
         let pressedDigit = sender.tag
         if pressedDigit == digitsInt[currentDigitIndex] {
-            // move to next digit
             currentDigitIndex += 1
             if currentDigitIndex < digits.count {
                 // display next digit
                 enteredNumberLabel.text = "\(digitsInt[currentDigitIndex])"
             } else {
-                // test is complete
                 timer?.invalidate()
-                //timerLabel.isHidden = true
-                enteredNumberLabel.text = "Test Complete"
             }
         }
-        
         playAudioSequence()
     }
     

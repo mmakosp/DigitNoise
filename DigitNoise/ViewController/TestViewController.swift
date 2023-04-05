@@ -28,6 +28,7 @@ class TestViewController: UIViewController {
     var currentTrial = 0
     var currentTestLevel: Int = 5
     var pickedNumbers: String? = ""
+    var randomDigitsPickedToVerify: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,13 +101,26 @@ class TestViewController: UIViewController {
     }
     
     var randomDigitsPicked: [String] {
-        return digits[randomPick: 3]
+        var selectedItems = Set<String>()
+        while selectedItems.count < 3 {
+            let randomItem = digits.randomElement()!
+            if !selectedItems.contains(randomItem) {
+                selectedItems.insert(randomItem)
+            }
+        }
+        return Array(selectedItems)
     }
     
     lazy var playerQueue: AVQueuePlayer? = {
-        guard let url1 = Bundle.main.url(forResource: randomDigitsPicked[0], withExtension: "m4a"),
-              let url2 = Bundle.main.url(forResource: randomDigitsPicked[1], withExtension: "m4a"),
-              let url3 = Bundle.main.url(forResource: randomDigitsPicked[2], withExtension: "m4a") else { return nil }
+        if randomDigitsPickedToVerify.count < 3 {
+            randomDigitsPickedToVerify = randomDigitsPicked
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.randomDigitsPickedToVerify = self.randomDigitsPicked
+        }
+        guard let url1 = Bundle.main.url(forResource: randomDigitsPickedToVerify[0], withExtension: "m4a"),
+              let url2 = Bundle.main.url(forResource: randomDigitsPickedToVerify[1], withExtension: "m4a"),
+              let url3 = Bundle.main.url(forResource: randomDigitsPickedToVerify[2], withExtension: "m4a") else { return nil }
         let item1 = AVPlayerItem(url: url1)
         let item2 = AVPlayerItem(url: url2)
         let item3 = AVPlayerItem(url: url3)
@@ -126,7 +140,6 @@ class TestViewController: UIViewController {
     }()
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
-        //verifyNumbers()
         DispatchQueue.main.async {
             self.verifyNumbers()
         }
@@ -160,6 +173,7 @@ class TestViewController: UIViewController {
             }
         }
         numberInputTextField.text = ""
+        randomDigitsPickedToVerify = randomDigitsPicked
     }
     
     private func playAddObserver() {
@@ -183,6 +197,7 @@ class TestViewController: UIViewController {
                 self.numberInputTextField.isEnabled = true
                 self.numberInputTextField.becomeFirstResponder()
                 self.submitButton.isEnabled = true
+                self.randomDigitsPickedToVerify = self.randomDigitsPicked
             }
         }
     }

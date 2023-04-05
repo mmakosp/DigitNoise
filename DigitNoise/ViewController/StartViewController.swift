@@ -1,4 +1,5 @@
 import UIKit
+import AVFoundation
 
 class StartViewController: UIViewController {
     
@@ -7,6 +8,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupComponents()
+        resetTestLevel()
     }
     
     private func setupComponents() {
@@ -17,20 +19,9 @@ class StartViewController: UIViewController {
         startButton.clipsToBounds = true
     }
     
-    private func decreaseLevel() {
-        
-    }
-    
-    private func increaseLevel() {
-        
-    }
-    
-    func createTripLetsNumbers(count: Int) -> [Int] {
-        var digits = [Int]()
-        for _ in 0..<count {
-            let digit = Int.random(in: 0...9)
-            digits.append(digit)
-        }
-        return digits
+    func resetTestLevel() {
+        let testNoiseUserLevel = 5
+        UserDefaults.standard.set(testNoiseUserLevel, forKey: "TestNoiseUserLevel")
+
     }
 }

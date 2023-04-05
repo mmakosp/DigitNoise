@@ -18,6 +18,33 @@ class TestViewModel {
     var randomNoisesPicked: [String] {
         let shuffledNameArray = noise.shuffled()
         return Array(shuffledNameArray.prefix(3))
+        
+    }
+    
+    var playerQueue: AVQueuePlayer = {
+        let url1 = Bundle.main.url(forResource: "3", withExtension: "m4a")!
+        let url2 = Bundle.main.url(forResource: "7", withExtension: "m4a")!
+        let url3 = Bundle.main.url(forResource: "2", withExtension: "m4a")!
+        let item1 = AVPlayerItem(url: url1)
+        let item2 = AVPlayerItem(url: url2)
+        let item3 = AVPlayerItem(url: url3)
+        
+        
+        let queue = AVQueuePlayer(items: [item1, item2, item3])
+        return queue
+    }()
+    
+    func digitsQueuePlayer(arrayToPlay: [String]) -> AVQueuePlayer {
+        let url1 = Bundle.main.url(forResource: arrayToPlay[0], withExtension: "m4a")!
+        let url2 = Bundle.main.url(forResource: arrayToPlay[1], withExtension: "m4a")!
+        let url3 = Bundle.main.url(forResource: arrayToPlay[2], withExtension: "m4a")!
+        let item1 = AVPlayerItem(url: url1)
+        let item2 = AVPlayerItem(url: url2)
+        let item3 = AVPlayerItem(url: url3)
+        
+        
+        let queue = AVQueuePlayer(items: [item1, item2, item3])
+        return queue
     }
 }
 
